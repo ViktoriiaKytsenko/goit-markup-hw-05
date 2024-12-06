@@ -474,8 +474,11 @@
               />
             </label>
             <button type="submit" class="button-subscribe">
-              Subscribe
-              <svg class="footer-icon-subscribe" width="24" height="24">
+              Subscribe<svg
+                class="footer-icon-subscribe"
+                width="24"
+                height="24"
+              >
                 <use href="./images/icons.svg#icon-Frame-3"></use>
                 >
               </svg>
@@ -492,8 +495,8 @@
           </svg>
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
-        <form class="modal-form-request" name="request">
-          <div class="modal-form-field">
+        <div class="modal-form-field">
+          <form class="modal-form-request" name="request">
             <label class="modal-form-label" for="user-name">Name</label>
             <div class="modal-form-wrapper">
               <input
@@ -506,8 +509,8 @@
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
             </div>
-            <label class="modal-form-label" for="user-phone">Phone</label>
             <div class="modal-form-wrapper">
+              <label class="modal-form-label" for="user-phone">Phone</label>
               <input
                 class="modal-form-input"
                 type="tel"
@@ -518,8 +521,9 @@
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </div>
-            <label class="modal-form-label" for="email">Email</label>
             <div class="modal-form-wrapper">
+              <label class="modal-form-label" for="email">Email</label>
+
               <input
                 class="modal-form-input"
                 type="email"
@@ -540,14 +544,26 @@
             >
             </textarea>
             <div class="modal-form-checkbox">
-              <input type="checkbox" class="form-checkbox" name="content" />
-              <p class="checkbox-text checkbox-text-privacy">
-                I accept the terms and conditions of the Privacy Policy
-              </p>
+              <input
+                class="modal-form-input visually-hidden"
+                type="checkbox"
+                class="form-checkbox"
+                name="content"
+                id="user-privacy"
+                value="true"
+              />
+              <label
+                class="modal-form-label label-checkbox-text"
+                for="user-privacy"
+                >I accept the terms and conditions of the<span
+                  class="checkbox-text-privacy"
+                  >Privacy Policy</span
+                >
+              </label>
               <button class="button-form" type="button">Send</button>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   </body>
