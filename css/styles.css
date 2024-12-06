@@ -638,13 +638,13 @@ img {
 }
 
 .modal-text {
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-bottom: 16px;
 }
 
 .label-checkbox-text {
@@ -657,11 +657,14 @@ img {
   margin-bottom: 16px;
 }
 
+.modal-form-box {
+  margin-bottom: 8px;
+}
+
 .modal-form-wrapper {
   width: 100%;
   height: auto;
   position: relative;
-  margin-bottom: 8px;
 }
 
 .modal-form-input:focus {
