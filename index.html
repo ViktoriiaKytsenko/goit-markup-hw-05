@@ -22,7 +22,6 @@
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
   <body>
     <header class="page-header">
       <div class="container container-header">
@@ -508,6 +507,8 @@
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
             </div>
+          </div>
+          <div class="modal-form-box">
             <label class="modal-form-label" for="user-phone">Phone</label>
             <div class="modal-form-wrapper">
               <input
@@ -520,8 +521,10 @@
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </div>
+          </div>
+          <div class="modal-form-box">
+            <label class="modal-form-label" for="email">Email</label>
             <div class="modal-form-wrapper">
-              <label class="modal-form-label" for="email">Email</label>
               <input
                 class="modal-form-input"
                 type="email"
@@ -532,33 +535,34 @@
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
             </div>
-            <label class="modal-form-label" for="user-message">Content</label>
-            <textarea
-              class="modal-form-textarea"
-              name="user-message"
-              id="user-message"
-              rows="8"
-              placeholder="Text input"
-            >
-            </textarea>
-            <div class="modal-form-checkbox">
-              <input
-                class="modal-form-input form-checkbox visually-hidden"
-                type="checkbox"
-                name="content"
-                id="user-privacy"
-                value="true"
-              />
-              <label
-                class="modal-form-label label-checkbox-text"
-                for="user-privacy"
-                >I accept the terms and conditions of the<span
-                  class="checkbox-text-privacy"
-                  >Privacy Policy</span
-                >
-              </label>
-              <button class="button-form" type="button">Send</button>
-            </div>
+          </div>
+
+          <label class="modal-form-label" for="user-message">Content</label>
+          <textarea
+            class="modal-form-textarea"
+            name="user-message"
+            id="user-message"
+            rows="8"
+            placeholder="Text input"
+          >
+          </textarea>
+          <div class="modal-form-checkbox">
+            <input
+              class="modal-form-input form-checkbox visually-hidden"
+              type="checkbox"
+              name="content"
+              id="user-privacy"
+              value="true"
+            />
+            <label
+              class="modal-form-label label-checkbox-text"
+              for="user-privacy"
+              >I accept the terms and conditions of the<span
+                class="checkbox-text-privacy"
+                >Privacy Policy</span
+              >
+            </label>
+            <button class="button-form" type="button">Send</button>
           </div>
         </form>
       </div>
