@@ -463,17 +463,24 @@
         </div>
         <div class="footer-subscribe">
           <p class="footer-subscribe-text">Subscribe</p>
-          <label class="footer-label" for="user-email"></label>
-          <div class="label-wrapper">
-            <input
-              class="label-input"
-              type="email"
-              id="user-email"
-              name="user-email"
-              placeholder="E-mail"
-            />
-            <button type="button" class="button-subscribe">Subscribe</button>
-          </div>
+          <form name="feedback" class="feedback-form">
+            <label class="footer-label" for="user-email">
+              <input
+                class="label-input"
+                type="email"
+                id="user-email"
+                name="user-email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="button-subscribe">
+              Subscribe
+              <svg class="footer-icon-subscribe" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame-3"></use>
+                >
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
