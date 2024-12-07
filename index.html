@@ -472,7 +472,7 @@
                 placeholder="E-mail"
               />
             </label>
-            <button type="submit" class="button-subscribe">
+            <button type="submit" class="button button-subscribe">
               Subscribe<svg
                 class="footer-icon-subscribe"
                 width="24"
@@ -485,7 +485,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="8" height="8">
@@ -508,7 +508,7 @@
               </svg>
             </div>
           </div>
-          <div class="modal-form-wrapper">
+          <div class="modal-form-box">
             <label class="modal-form-label" for="user-phone">Phone</label>
             <div class="modal-form-wrapper">
               <input
@@ -522,7 +522,7 @@
               </svg>
             </div>
           </div>
-          <div class="modal-form-wrapper">
+          <div class="modal-form-box">
             <label class="modal-form-label" for="email">Email</label>
             <div class="modal-form-wrapper">
               <input
@@ -536,35 +536,34 @@
               </svg>
             </div>
           </div>
-          <div class="modal-form-wrapper">
-            <label class="modal-form-label" for="user-comment">Content</label>
+          <div class="modal-form-box-comment">
+            <label class="modal-form-label" for="user-comment">Comment</label>
             <textarea
               class="modal-form-textarea"
               name="user-comment"
               id="user-comment"
               rows="8"
               placeholder="Text input"
-            >
-            </textarea>
+            ></textarea>
           </div>
           <div class="modal-form-checkbox">
             <input
-              class="modal-form-input form-checkbox visually-hidden"
+              class="form-checkbox visually-hidden"
               type="checkbox"
-              name="content"
+              name="user-privacy"
               id="user-privacy"
               value="true"
             />
-            <label
-              class="modal-form-label label-checkbox-text"
-              for="user-privacy"
-              >I accept the terms and conditions of the<span
-                class="checkbox-text-privacy"
-                >Privacy Policy</span
-              >
+            <label class="label-checkbox-text" for="user-privacy"
+              ><span class="custom-checkbox"
+                ><svg class="checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
+              <a href="" class="checkbox-text-privacy">Privacy Policy</a>
             </label>
-            <button class="button-form" type="button">Send</button>
           </div>
+          <button class="button button-form" type="submit">Send</button>
         </form>
       </div>
     </div>
